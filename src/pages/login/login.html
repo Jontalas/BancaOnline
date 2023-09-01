@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="login">
+    <header class="header">
+      <img class="login_logo" src="../../core/content/img/logo_header.svg" />
+    </header>
+    <div class="bg-img"></div>
+    <div class="login_box">
+      <h1>Acceso</h1>
+      <form>
+        <input id="user" type="text" placeholder="Usuario" autocomplete="off" />
+        <p id="user-error" class="error"></p>
+        <input
+          id="password"
+          type="password"
+          placeholder="Contraseña"
+          autocomplete="off"
+        />
+        <p id="password-error" class="error"></p>
+        <button id="login-button" type="submit" class="btn_enviar">
+          ENVIAR
+        </button>
+      </form>
+      <h4>Está Usted en un <strong>sitio seguro</strong></h4>
+      <script src="login.js"></script>
+    </div>
+  </body>
+</html>

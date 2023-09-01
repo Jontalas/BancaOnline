@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="/styles.2443d383.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/pages\login\login.html">
+          <img class="header_logo" src="/logo_header_white.eadd094c.svg">
+        </a>
+        <div class="usuario">
+          <p>Bienvenido Sr. Juan López</p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <ul class="container">
+          <li><a href="/pages\account-list\account-list.html">Mis cuentas</a></li>
+          <li><a href="/pages\movements\movements.html">Movimientos</a></li>
+          <li class="selected">Transferencias</li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div>
+          <h1 class="titulo_paginas">Transferencias Nacionales</h1>
+        </div>
+        <form>
+          <div class="form_container">
+            <div>
+              <label>Selecciones cuenta de origen (IBAN):</label>
+              <select id="select-account" class="select"></select>
+            </div>
+            <p id="accountId-error" class="error"></p>
+
+            <div>
+              <label>Ingrese el IBAN de destino:</label>
+              <input id="iban" class="large" type="text">
+              <p id="iban-error" class="error"></p>
+            </div>
+            <div>
+              <label>Beneficiario:</label>
+              <input id="name" class="large" type="text">
+              <p id="name-error" class="error"></p>
+            </div>
+            <div>
+              <label>Importe <span class="bold">(EUR)</span>:</label>
+              <input id="amount" class="small" type="text">
+              <p id="amount-error" class="error"></p>
+            </div>
+            <div>
+              <label>Concepto:</label>
+              <input id="concept" class="large" type="text">
+              <p id="concept-error" class="error"></p>
+            </div>
+            <div>
+              <label>Observaciones:</label>
+              <input id="notes" class="large" type="text">
+              <p id="notes-error" class="error"></p>
+            </div>
+          </div>
+          <div class="form_container">
+            <p>
+              Para que la transferencia se realice en otra fecha diferente a la
+              de hoy, por favor, indíquenos la fecha de ejecución:
+            </p>
+            <div class="fecha">
+              <label>Fecha de ejecución:</label>
+              <input id="day" class="fecha-input small" type="number" onfocus="this.placeholder=''" placeholder="dd">
+              <p>/</p>
+              <input id="month" class="fecha-input small" type="number" onfocus="this.placeholder=''" placeholder="mm">
+              <p>/</p>
+              <input id="year" class="fecha-input medium" type="number" onfocus="this.placeholder=''" placeholder="yyyy">
+              <p id="date-error" class="error"></p>
+            </div>
+          </div>
+          <div class="form_container">
+            <p>
+              Escriba una dirección de email para dar aviso al beneficiario:
+            </p>
+            <div>
+              <label>Email del beneficiario:</label>
+              <input id="email" class="large" type="email">
+              <p id="email-error" class="error"></p>
+            </div>
+          </div>
+          <button id="transfer-button" type="button" class="btn_enviar_transferencia">
+            REALIZAR LA TRANSFERENCIA
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <img class="footer_logo" src="/logo_footer.2a4b177f.svg">
+      </div>
+    </footer>
+    <script src="/transfer.fe7ce288.js"></script>
+  </body>
+</html>

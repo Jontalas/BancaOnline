@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="../login/login.html">
+          <img
+            class="header_logo"
+            src="../../core/content/img/logo_header_white.svg"
+          />
+        </a>
+        <div class="usuario">
+          <p>Bienvenido Sr. Juan López</p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <ul class="container">
+          <li><a href="../account-list/account-list.html">Mis cuentas</a></li>
+          <li class="selected">Movimientos</li>
+          <li><a href="../transfer/transfer.html">Transferencias</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div>
+          <h1 class="titulo_paginas">
+            Saldos y Últimos movimientos
+            <div class="resumen_destacado">
+              <div class="saldo_disponible align-right">
+                <p class="label">SALDO DISPONIBLE</p>
+                <p id="balance" class="importe"></p>
+              </div>
+            </div>
+          </h1>
+          <h3 class="subtitulo_paginas">
+            Alias: <span id="alias"></span><span class="iban">IBAN: <span id="iban"></span></span>
+          </h3>
+        </div>
+        <table cellspacing="1" cellpadding="0" align="center" class="full">
+          <thead>
+            <tr>
+              <td>FECHA</td>
+              <td>FECHA VALOR</td>
+              <td>DESCRIPCIÓN</td>
+              <td>IMPORTE</td>
+              <td>SALDO DISPONIBLE</td>
+            </tr>
+          </thead>
+          <tbody id="movement-list"></tbody>
+        </table>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <img class="footer_logo" src="../../core/content/img/logo_footer.svg" />
+      </div>
+    </footer>
+    <script src="movements.js"></script>
+  </body>
+</html>

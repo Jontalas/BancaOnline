@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="../login/login.html">
+          <img
+            class="header_logo"
+            src="../../core/content/img/logo_header_white.svg"
+          />
+        </a>
+        <div class="usuario">
+          <p>Bienvenido Sr. Juan López</p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <ul class="container">
+          <li class="selected">
+            <a href="../account-list/account-list.html">Mis cuentas</a>
+          </li>
+          <li><a href="../movements/movements.html">Movimientos</a></li>
+          <li><a href="../transfer/transfer.html">Transferencias</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div>
+          <h1 class="titulo_paginas">Cuenta Bancaria</h1>
+        </div>
+        <form>
+          <div class="form_container">
+            <div>
+              <label>Tipo de cuenta:</label>
+              <select id="type" class="select">
+                <option value=""></option>
+                <option value="1">Nómina</option>
+                <option value="2">Ahorro</option>
+                <option value="3">Normal</option>
+              </select>
+              <p id="type-error" class="error"></p>
+            </div>
+            <div>
+              <label>Alias:</label>
+              <input id="alias" class="large" type="text" />
+              <p id="alias-error" class="error"></p>
+            </div>
+          </div>
+          <button
+            id="save-button"
+            type="submit"
+            class="btn_enviar_transferencia"
+          >
+            GUARDAR
+          </button>
+        </form>
+        <div class="grid"></div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <img class="footer_logo" src="../../core/content/img/logo_footer.svg" />
+      </div>
+    </footer>
+    <script src="account.js"></script>
+  </body>
+</html>
